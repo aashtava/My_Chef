@@ -1,0 +1,13 @@
+1] Create cookbook:
+-chef generate cookbook test_cookbook
+
+2] Create Chef Recipe
+Go to cookbook 
+execute: 
+-chef generate recipe test-recipe1
+
+3] Check Recipe
+- chef exec ruby -c test_cookbook/recipes/test-recipe.rb
+
+4] Execute Recipe: 
+- chef-client -zr "recipe[test_cookbook::test-recipe]"
